@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <link href="https//fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/new_payroll_form.css">
     <title>Employee payroll form</title>
     <script src="/js/new_payroll_form.js"></script>
@@ -14,13 +16,18 @@
         <div class="logo-content">
             <img src="/assets/logo.jpg" alt="">
             <div>
-                <span class="emp-text">EMPLOYEE</span>
-                <span class="emp-text emp-payroll">PAYROLL</span>
+                <span class="logoText logoText1">EMPLOYEE</span><br>
+                <span class="logoText">PAYROLL</span>
             </div>
         </div>
     </header>
 <div class="form-content">
 <form class="form" action="#" onsubmit="save(event);return false">
+    <div class="form-head">Employee Payroll form</div>
+    <div class="row-content">
+    <label class="label text" for="name">Name</label>
+    <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+</div>
 </form>
 </div>
 </body>
