@@ -156,7 +156,7 @@ td:first-child{
     align-items: center;
 }
 td img:first-child{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 td img{
     cursor: pointer;
@@ -165,11 +165,11 @@ td img{
     background-color: #e9fea5;
     border-radius: 40%;
     width: fit-content;
-    padding: 1px 7px;
+    padding: 1px 10px;
     text-align: center;
     font-size: 14px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 8px;
 }
 .profile{
@@ -179,7 +179,7 @@ td img{
 }
 
 .edit-delete{
-    width: 300px;
+    width: 120px;
     padding: 10px 20px;
 }
 table {

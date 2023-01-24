@@ -31,6 +31,18 @@ const save = () => {
     }
 }
 
+function createAndUpdateStorage(employeePayrollData) {
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+
+    if(employeePayrollList != undefined) {
+        employeePayrollList.push(employeePayrollData);
+    } else {
+        employeePayrollList = [employeePayrollData]
+    }
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList))
+    alert("data save...");
+}
+
 const resetForm = () => {
     setValue('#name', '');
     unsetSelectedValues('[name=profile]');
@@ -60,16 +72,6 @@ const setValue=(id,value)=>{
     element.value=value;
 }
 
-function createAndUpdateStorage(employeePayrollData){
-    let employeePayrollList=JSON.parse(localStorage.getItem(employeePayrollData));
-    if (employeePayrollList!=undefined) {
-        employeePayrollList.push(employeePayrollData);
-    }else{
-        employeePayrollList=[employeePayrollData];
-    }
-    alert(employeePayrollList.JSON.stringify(employeePayrollList));
-    localStorage.setItem("EmployeePayrollList",JSON.stringify(employeePayrollList))
-}
 
 const createEmployeePayroll = () => {
     let employeePayrollData = new EmployeePayrollData();
