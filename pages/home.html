@@ -13,8 +13,6 @@
 &display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
     <title>Employee payroll form</title>
-    <script src="/js/EmployeePayroll.js"></script>
-    <script src="/js/new_payroll_form.js"></script>
 </head>
 
 <body>
@@ -35,31 +33,16 @@
             <a href="/pages/payroll_form.html" class="add-button">
                 <img alt="">+ Add User</a>
         </div>
+        <div class="table-main">
+            <table id="table-display" class="table">
+               
+            </table>
+        </div>
     </div>
-    <table id="display" class="table">
-        <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Department</th>
-            <th>Salary</th>
-            <th>Start Date</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td><img style="margin-left: auto;margin-right: auto;" class="profile" alt="" src="/assets/profile-images/image1.jpg"></td>
-            <td>Ratnadip Bharde</td>
-            <td>Male</td>
-            <td ><div class="dept-label">HR</div>
-           <div class="dept-label">Finance</div></td>
-            <td>3000000</td>
-            <td>1 Nov 2020</td>
-            <td>
-                <img style="width: 18px;" id="1" onclick="remove(this)" alt="delete" src="/assets/icon/delete.png">
-                <img style="width: 25px;" id="2" onclick="update(this)" alt="edit" src="/assets/icon/edit.png">
-            </td>
-        </tr>
-    </table>
+    <script src="/js/home.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/js/site_properties.js"></script>
+    <script src="/js/EmployeePayroll.js"></script>
 </body>
 
 </html>
