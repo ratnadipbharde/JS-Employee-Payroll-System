@@ -128,9 +128,9 @@ th {
 
 th {
     background: #42515f 0% 0% no-repeat padding-box;
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
     text-align: center;
-    font: normal normal medium 18px/24px Roboto;
+    font: normal normal normal 18px/24px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ td:first-child{
     align-items: center;
 }
 td img:first-child{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 td img{
     cursor: pointer;
@@ -177,3 +177,17 @@ td img{
     border-radius: 50px;
     margin-left: 12px;
 }
+
+.edit-delete{
+    width: 300px;
+    padding: 10px 20px;
+}
+table {
+    width: 100%;
+  }
+  .ten {
+    width: 10%
+  }
+  .twenty {
+    width: 20%;
+  }
