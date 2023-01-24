@@ -4,17 +4,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const createInnerHtml = () => {
     const headerHtml="<tr><th></th><th>Name</th><th>Gender</th><th>Department</th><th>Salary</th><th>Start Date</th><th>Action</th></tr>"
-    let employeePayrollData=createEmployeePayrollJSON()[1];
+    let employeePayrollData=createEmployeePayrollJSON()[0];
     const innerHtml = `${headerHtml}
 <tr>
     <td><img style="margin-left: auto;margin-right: auto;" class="profile" alt=""
             src="${employeePayrollData._profilePic}"></td>
     <td>${employeePayrollData._name}</td>
     <td>${employeePayrollData._gender}</td>
-    <td>
-        <div class="dept-label">${employeePayrollData._department[0]}</div>
-       <!--<div class="dept-label">${employeePayrollData._department[1]}</div>-->
-    </td>
+    <td>${getDeptHtml(employeePayrollData._department)}</td>
     <td>${employeePayrollData._salary}</td>
     <td>${employeePayrollData._startDate}</td>
     <td class="edit-delete">
@@ -45,7 +42,7 @@ const createEmployeePayrollJSON=()=>{
             _name:'Prashik Kamble',
             _gender:'Male',
             _department:[
-                'Engineering',
+                'Engineering','HR'
             ],
             _salary:'6500000',
             _startDate:'30 Oct 2019',
@@ -55,4 +52,12 @@ const createEmployeePayrollJSON=()=>{
         }
     ];
     return empPayrollListLocal;
+}
+
+const getDeptHtml = (deptList) => {
+    let deptHtml = '';
+    for(const dept of deptList) {
+        deptHtml = `${deptHtml} <div class='dept-label'>${dept}</div>`
+    }
+    return deptHtml
 }
