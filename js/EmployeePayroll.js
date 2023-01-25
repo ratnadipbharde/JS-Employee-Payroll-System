@@ -41,11 +41,11 @@ class EmployeePayrollData {
         this._startDate = startDate;
     }
 
-     toString() {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const empData = !this._startDate ? "undefind" : this._startDate.toLocaleDateString("en-US", options);
+     toStringObject() {
+        //const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      //  const empData = !this._startDate ? "undefind" : this._startDate.toLocaleDateString("en-US", options);
         return "name='" + this._name + ", gender='" + this._gender +
             " department=" + this._department + ", salary=" + 
-            this._salary + ", startDate=" + empData + ", note=" + this._note;
+            this._salary + ", startDate=" + this._startDate + ", note=" + this._note;
     }
 }

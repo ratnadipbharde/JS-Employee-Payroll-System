@@ -24,6 +24,7 @@ const createInnerHtml = () => {
     <td>${getDeptHtml(employeePayrollData._department)}</td>
     <td>${employeePayrollData._salary}</td>
     <td>${employeePayrollData._startDate}</td>
+    
     <td class="edit-delete">
         <img style="width: 15px;" name="${employeePayrollData._id}" onclick="remove(this)" alt="delete" src="/assets/icon/delete.png">
         <img style="width: 22px;" name="${employeePayrollData._id}" onclick="update(this)" alt="edit" src="/assets/icon/edit.png">
@@ -67,8 +68,8 @@ const createEmployeePayrollJSON = () => {
 
 const getDeptHtml = (deptList) => {
     let deptHtml = '';
-    for (const dept of deptList) {
+   for (const dept of deptList) {
         deptHtml = `${deptHtml} <div class='dept-label'>${dept}</div>`
     }
-    return deptHtml
+    return deptHtml;
 }
