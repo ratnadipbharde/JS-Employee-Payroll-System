@@ -24,34 +24,27 @@ body {
     width: 80%;
 }
 
-.logo-content-img {
-    border: solid 0px #42515f;
+.logo-content-img { border: solid 0px #42515f;}
+
+#logo-image {
+    padding: 5px;
+    width: 65px;
 }
 
 .emp-text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
+    color: #82a70c;
     text-transform: capitalize;
 }
 
-.emp-payroll {
-    color: #42515f;
-    font-family: Roboto;
-}
 
-* {
-    box-sizing: border-box;
-}
+.emp-payroll { color: #42515f;}
 
-.logoText {
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: bold;
-}
-.logoText1{
-    color: #82A70C;
-}
+* {box-sizing: border-box;}
+
+
 
 .form-content{
     min-height: calc(100%-80px);
@@ -152,11 +145,11 @@ select{
     color: #42515f;
     opacity: 1;
     background: transparent;
-    border: none;
+    border-radius: 5px;
     font-weight: 400;
     min-width: 140px;
     padding: 7px 7px;
-    border: 1px solid #707070;
+    border: 1px solid #ccc;
     cursor: pointer;
 }
 

@@ -24,19 +24,11 @@ body {
     width: 80%;
 }
 
-.logo-content-img {
-    border: solid 0px #42515f;
-}
+.logo-content-img { border: solid 0px #42515f;}
 
-.logoText {
-    font-size: 45px;
-    font-family: Roboto;
-    font-weight: bold;
-    color: #42515f;
-}
-
-.logoText1 {
-    color: #82A70C;
+#logo-image {
+    padding: 5px;
+    width: 65px;
 }
 
 .emp-text {
@@ -47,13 +39,10 @@ body {
     text-transform: capitalize;
 }
 
-.emp-payroll {
-    color: #42515f;
-}
 
-* {
-    box-sizing: border-box;
-}
+.emp-payroll { color: #42515f;}
+
+* {box-sizing: border-box;}
 
 .mai-content {
     display: flex;
